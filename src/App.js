@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import AboutProject from './components/AboutProject'
+
+import SignUp from './components/SignUp';
+import SignIn from './components/SignIn';
+import MyAnotations from './components/MyAnotations'
+import CreateAnotation from './components/CreateAnotation';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      
+      <Routes>
+        <Route exact path='/' element={<AboutProject />}/>
+        <Route exact path='/SignUp' element={<SignUp />}/>
+        <Route exact path='/SignIn' element={<SignIn />}/>
+        <Route exact path='/MyAnotations' element={<MyAnotations/>}/>
+        <Route exact path='/CreateAnotation' element={<CreateAnotation/>}/>
+      </Routes>
+    </Router>
   );
+
 }
 
 export default App;
