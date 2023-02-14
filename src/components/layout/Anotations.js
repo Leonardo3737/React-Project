@@ -27,8 +27,7 @@ function MyAnotations(Id) {
             .catch(err => console.log(err))
     }, [])
 
-    function deleteAnotation(key) {
-        let id = key.target.parentNode.id
+    function deleteAnotation(id) {
         fetch(`http://localhost:8080/anotations/${id}`, {
             method: 'DELETE',
             headers: {
@@ -48,7 +47,7 @@ function MyAnotations(Id) {
                     <div key={key} className={style.anotationBox}>
                         <div className={style.titleBox}>
                             {anotation.anotation.title}
-                            <button id={anotation.id} className={style.button} onDoubleClick={deleteAnotation}>
+                            <button className={style.button} onDoubleClick={() => deleteAnotation(anotation.id)}>
                                 <MdOutlineDelete className={style.iconDelete} />
                             </button>
                         </div>

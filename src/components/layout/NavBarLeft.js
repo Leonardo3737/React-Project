@@ -15,10 +15,10 @@ function NavBarLeft(id) {
     return (
         <div className={style.navBar}>
             <button
-                className={style.button}
+                className={`${style.button} ${style.white}`}
                 onClick={createAnotation}>Criar Nova Anotação</button>
             <button
-                className={style.button}
+                className={`${style.button} ${style.white}`}
                 onClick={myAnotations}>Minhas Anotações</button>
         </div>
     )
