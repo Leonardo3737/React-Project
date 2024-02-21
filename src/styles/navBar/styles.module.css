@@ -1,0 +1,73 @@
+.navBar {
+    height: 75px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0e2c40;
+    position: absolute;
+    top: 0;
+}
+
+
+.link, .createAccount, .singIn {
+    text-decoration: none;
+    font-weight: bold;
+}
+.link{
+    font-size: 30px;
+    margin-left: 40px;
+    color: #c1e1a7;
+}
+
+.createAccount {
+    background-color: #1a4a5a;
+    padding: 9px 10px 10px 20px;
+    border-radius: 20px 0 0 20px;
+    color: black;
+}
+
+.singIn {
+    color: #c1e1a7;
+    margin-right: 10px;
+    border: 1px solid #c1e1a7;
+    padding: 9px 20px 10px 10px;
+    border-radius: 0 20px 20px 0;
+}
+
+.left {
+    padding-right: 30px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logOut {
+    font-weight: bold;
+    background-color: #1a4a5a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.screenCreateAccount {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #1a4a5a;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: black;
+}
+
+.screenSingIn {
+    text-decoration: none;
+    font-weight: bold;
+    color: #c1e1a7;
+    margin-right: 10px;
+    border: 1px solid #c1e1a7;
+    padding: 10px;
+    border-radius: 20px;
+}

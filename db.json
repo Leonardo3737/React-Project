@@ -1,33 +1,4 @@
 {
-  "users": [
-    {
-      "name": "a",
-      "email": "aa@aaa",
-      "password": "a",
-      "confirmPassword": "a",
-      "id": 1
-    },
-    {
-      "name": "a",
-      "email": "aa@aaaa",
-      "password": "a",
-      "confirmPassword": "a",
-      "id": 2
-    },
-    {
-      "name": "asd",
-      "email": "leovinicius3737@gmail.com",
-      "password": "a",
-      "confirmPassword": "a",
-      "id": 3
-    },
-    {
-      "name": "asd",
-      "email": "leovinicius3737@gmail.coma",
-      "password": "a",
-      "confirmPassword": "a",
-      "id": 4
-    }
-  ],
+  "users": [],
   "anotations": []
 }
